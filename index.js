@@ -42,6 +42,15 @@ async function handleSearch(e) {
                 item.className = "search-item";
                 item.setAttribute('id', `${data.results[i].id}`);
 
+                let imageContainer = document.createElement('div');
+                imageContainer.className = "image-container";
+
+                let image = document.createElement('img');
+                image.src = data.results[i].image.url;
+
+                imageContainer.appendChild(image);
+                item.appendChild(imageContainer);
+
                 let label = document.createElement('div');
                 label.innerHTML = data.results[i].name;
                 label.addEventListener('click', viewHeroPage);
@@ -64,6 +73,8 @@ async function handleSearch(e) {
         }
     }
 }
+
+
 
 // fetch results from API
 async function fetchAsync(url) {
