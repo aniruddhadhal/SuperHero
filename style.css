@@ -1,4 +1,4 @@
-    body {
+  body {
         background-image: url(https://i.ytimg.com/vi/nyIZx4h64rA/maxresdefault.jpg);
         margin: auto;
         text-align: center;
@@ -54,11 +54,14 @@
     }
     
     #search-results-container div {
+        color: #050303;
+        font-size: 1rem;
+        font-weight: bold;
         box-sizing: border-box;
         margin: 2px auto;
         padding: 10px;
         cursor: pointer;
-        background-color: #383636;
+        background-color: #f6f3f3;
         border: 1px solid #7474ec;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -165,7 +168,7 @@
         min-width: 480px;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
     }
     
     .hero-details {
@@ -199,7 +202,7 @@
     }
     
     .hero-name {
-        color: #f0f0f0;
+        color: #1d1919;
         font-size: 2.5rem;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
@@ -207,6 +210,7 @@
         border: 2px solid red;
         border-radius: 5px;
         margin-bottom: 5px;
+        background-color: white;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
@@ -214,12 +218,14 @@
     }
     
     .remove-fav {
+        margin-top: 10px;
         font-size: 1rem;
+        font-weight: bold;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #5CC7B2;
         padding: 15px;
-        color: #FFFFFF;
+        color: #100f0f;
         border-radius: 5px;
+        background-color: #fffcfc;
     }
     
     .remove-fav:hover {
